@@ -59,5 +59,30 @@ nothing to commit, working tree clean
 
 ## 4.对文件进行修改后重新提交及返回至原版本
 
+对文件修改后可用 `git status`进行修改查看，重复**步骤3.**中过程即可储存更改。注意`git commit`后须对更改进行说明才可继续commit
+
+```bash
+79862@DESKTOP-G1C5J5S MINGW64 /d/学习笔记 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   "Git\345\256\211\350\243\205\344\270\216\344\275\277\347\224\250.md"
+
+
+79862@DESKTOP-G1C5J5S MINGW64 /d/学习笔记 (master)
+$ git add Git安装与使用.md
+
+79862@DESKTOP-G1C5J5S MINGW64 /d/学习笔记 (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+79862@DESKTOP-G1C5J5S MINGW64 /d/学习笔记 (master)
+$ git commit
+[master 0888441] test 1
+ 1 file changed, 22 insertions(+)
+```
+
 
 
